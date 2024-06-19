@@ -1,0 +1,116 @@
+.vertical-dots-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.contact-list h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-list ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-list li:hover {
+  background-color: #F5F7FB;
+}
+
+.contact-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contact-list h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-list p {
+  margin: 0;
+  color: #888888;
+}
+
+.contact-list span {
+  background-color: #3BA55D;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-left: auto;
+  float: right;
+}
+
+.vertical-dots-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.contact-link:hover {
+  background-color: #F5F7FB;
+}
+
+.contact-list li.selected {
+  background-color: #F5F7FB;
+}
+
+.chatHeader {
+  display: flex;
+  position: fixed;
+  padding-bottom: 20px;
+  width: 25%;
+  /* margin-bottom: 20px; */
+  background-color: white;
+  /* margin-top: 0px; */
+  padding-top: 20px;
+  top: 0;
+}
+
+.contact-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
