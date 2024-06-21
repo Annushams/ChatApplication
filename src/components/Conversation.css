@@ -1,0 +1,124 @@
+.conversation-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+}
+
+.conversation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  overflow-y: auto;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.conversation h1 {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.conversation .messages {
+  flex: 1;
+  padding: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversation .message {
+  max-width: 80%;
+  /* min-width: 15%; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.conversation .message p {
+  margin: 0;
+}
+
+.conversation .message span {
+  font-size: 12px;
+  color: #888888;
+}
+
+.conversation input[type="text"] {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.conversation button.send-button {
+  background-color: #DCF7C5;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+}
+
+.message-input {
+  display: flex;
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-bottom: 15px;
+  width: -webkit-fill-available;
+  bottom: 0px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.conversation button.send-button:hover {
+  background-color: #3BA55D;
+  color: white
+}
+
+.conversation .message.your-message {
+  align-self: flex-end;
+  /* Align your messages to the right */
+  background-color: #dcf8c6;
+  /* Your message background color */
+}
+
+.conversation .message.your-message p {
+  color: #075e54;
+  /* Your message text color */
+}
+
+.conversation .message.your-message span {
+  color: #888888;
+  /* Timestamp color for your messages */
+}
+
+.conversation .message.their-message {
+  align-self: flex-start;
+  /* Align other person's messages to the left */
+  background-color: #f0f0f0;
+  /* Their message background color */
+  color: #333;
+  /* Their message text color */
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 80%;
+}
+
+.conversation .message.their-message p {
+  margin: 0;
+  /* Reset margin to ensure text alignment */
+}
+
+.conversation .message.their-message span {
+  font-size: 12px;
+  color: #888888;
+  /* Timestamp color for their messages */
+}
